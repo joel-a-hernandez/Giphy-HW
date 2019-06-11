@@ -40,7 +40,6 @@ var sportsArray = ['basketball', 'soccer', 'football', 'volleyball']
                     var state = $(this).attr("data-state");
 
                     // If the clicked image's state is still, update its src attribute to what its data-animate value is.
-
                     if (state === "still") {
                         $(this).attr("data-state", "animate");   // Then, set the image's data-state to animate
                         $(this).attr("src", $(this).attr("data-animate"));
@@ -97,4 +96,3 @@ var sportsArray = ['basketball', 'soccer', 'football', 'volleyball']
         $(document).on("click", ".gif", displayGifs);
 
         renderButtons();
-        
